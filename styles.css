@@ -45,6 +45,8 @@ h1 {
 
 p{
 	margin: 0;
+	font-weight: 300;
+	font-size: 30px;
 }
 .hero-text {
 	margin-left: 80px;
