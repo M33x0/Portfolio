@@ -1,83 +1,94 @@
-body {
-	font-family: 'Poppins', sans-serif;
+:root {
+	--mainColor: #eaeaea;
+	--secondaryColor: #fff;
+
+	--borderColor: #c1c1c1;
+
+	--mainText: black;
+	--secondaryText: #4b5156;
 }
 
-section {
-	height: 500px;
-	background-color: white;
-	border: solid black 1px;
+body,
+html {
+	padding: 0;
+	margin: 0;
 }
 
-.hero {
-	background-color: #1c1d25;
-	height: 100vh;
-	color: white;
-	font-size: 40px;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong {
+	color: var(--mainText);
+	font-family: 'Russo One', sans-serif;
 }
 
-footer {
-	height: 500px;
-	background-color: red;
+p,
+li,
+span,
+label,
+input,
+textarea {
+	color: var(--secondaryText);
+	font-family: 'Roboto Mono', monospace;
 }
 
-nav {
-	display: flex;
-	justify-content: space-between;
+a {
+	text-decoration: none;
+	color: #17a2b8;
 }
 
 ul {
-	display: flex;
 	list-style: none;
-	width: 500px;
-	justify-content: space-around;
-	font-size: 30px;
-}
-
-li {
-	/*width: 200px;*/
-	text-decoration: none;
 }
 
 h1 {
-	font-size: 90px;
-	margin: 0;
+	font-size: 56px;
 }
 
-p{
-	margin: 0;
-	font-weight: 300;
-	font-size: 30px;
+h2 {
+	font-size: 36px;
 }
 
-.hero-area{
-	display: flex;
-	flex-direction: column;
-	height: 100%;
-	justify-content: center;
+h3 {
+	font-size: 28px;
 }
 
-.hero-text {
-	margin-left: 80px;
-	margin-bottom: 200px;
+h4 {
+	font-size: 24px;
 }
 
-.button {
-	width: 200px;
-	height: 55px;
-	border-radius: 30px;
-	background-color:coral;
-	text-align: center;
-	font-weight: 300;
-	font-size: 30px;
-	padding-top: 5px;
-	margin-top: 20px;
+h5 {
+	font-size: 20px;
 }
 
-.button:hover{
-	background-color: #ef774b;
+h6 {
+	font-size: 16px;
 }
 
-.button:active{
-	background-color: #a9a9a9;
-	color: #808080;
+.s1 {
+	background-color: var(--mainColor);
+	border-bottom: 1px solid var(--borderColor);
+	overflow: auto;
+	/*remove margin around h1*/
+}
+
+.s2 {
+	background-color: var(--secondaryColor);
+	border-bottom: 1px solid var(--borderColor);
+	overflow: auto;
+	/*remove margin around h1*/
+}
+
+.main-container {
+	width: 1200px;
+	margin: 0 auto;
+}
+
+@media screen and (max-width: 1200px) {
+	.main-container {
+		width: 95%;
+	}
 }
