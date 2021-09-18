@@ -106,8 +106,10 @@ h6 {
 }
 
 .nav-wrapper{
+	border-radius: 5px 5px 0 0;
 	grid-area: nav-wrapper;
 	border-bottom: 1px solid   var(--borderColor);
+	background-color: var(--mainColor);
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -118,6 +120,17 @@ h6 {
 	padding: 10px;
 }
 
+#dot-1{
+	background-color: #FC6058;
+}
+
+#dot-2{
+	background-color: #FEC02F;
+}
+
+#dot-3{
+	background-color: #2ACA3E;
+}
 .browser-dot {
 	background-color: black;
 	height: 15px;
@@ -142,7 +155,7 @@ h6 {
 	display: grid;
 	text-align: center;
 	align-content: center;
-	border: 2px solid lightcoral;
+/*	border: 2px solid lightcoral;*/
 	min-height: 10em;
 }
 
